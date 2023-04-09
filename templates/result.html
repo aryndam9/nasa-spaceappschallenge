@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Open Metric</title>
+    <style>
+      body {
+        background-color: #1a1a1a;
+        color: #fff;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        color: #b3d9ff;
+        text-align: center;
+        margin-top: 50px;
+      }
+      p {
+        font-size: 24px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="background-image: linear-gradient(to bottom right, #1a1a1a, #2c2c2c);">
+      <h1>The Open Metric</h1>
+      <p>Title: {{ title }}</p>
+      <p>DOI: {{ doi }}</p>
+      <p>The Open Metric value for this article is: {{ open_metric_score }}</p>
+    </div>
+  </body>
+</html>
