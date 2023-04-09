@@ -1,0 +1,102 @@
+{
+    "added_on": 1422735780,
+    "altmetric_id": 3212820,
+    "altmetric_jid": "4f6fa5163cf058f610003786",
+    "authors": [
+        "J. D. Watson",
+        "F. H. C. Crick"
+    ],
+    "cited_by_accounts_count": 14,
+    "cited_by_feeds_count": 1,
+    "cited_by_posts_count": 14,
+    "cited_by_tweeters_count": 3,
+    "cited_by_wikipedia_count": 10,
+    "cohorts": {
+        "pub": 1,
+        "sci": 2
+    },
+    "context": {
+        "all": {
+            "count": 21775893,
+            "higher_than": 19461484,
+            "mean": 9.996694086269184,
+            "pct": 89,
+            "rank": 2308116
+        },
+        "journal": {
+            "count": 891,
+            "higher_than": 851,
+            "mean": 4.586561167227834,
+            "pct": 95,
+            "rank": 40
+        },
+        "similar_age_3m": {
+            "count": 324411,
+            "higher_than": 289124,
+            "mean": 8.845970968924977,
+            "pct": 89,
+            "rank": 35207
+        },
+        "similar_age_journal_3m": {
+            "count": 26,
+            "higher_than": 25,
+            "mean": 4.273076923076923,
+            "pct": 96,
+            "rank": 2
+        }
+    },
+    "details_url": "https://www.altmetric.com/details.php?citation_id=3212820",
+    "doi": "10.1101/sqb.1953.018.01.020",
+    "history": {
+        "1d": 0,
+        "1m": 0,
+        "1w": 0,
+        "1y": 8.08,
+        "2d": 0,
+        "3d": 0,
+        "3m": 0,
+        "4d": 0,
+        "5d": 0,
+        "6d": 0,
+        "6m": 5.08,
+        "at": 12.08
+    },
+    "images": {
+        "large": "https://badges.altmetric.com/?size=180&score=13&types=bttwwwww",
+        "medium": "https://badges.altmetric.com/?size=100&score=13&types=bttwwwww",
+        "small": "https://badges.altmetric.com/?size=64&score=13&types=bttwwwww"
+    },
+    "is_oa": false,
+    "issns": [
+        "0091-7451",
+        "1943-4456"
+    ],
+    "journal": "Cold Spring Harbor Symposia on Quantitative Biology",
+    "last_updated": 1652356677,
+    "pmid": "13168976",
+    "published_on": -536457600,
+    "publisher_subjects": [
+        {
+            "name": "Biochemistry And Cell Biology",
+            "scheme": "era"
+        }
+    ],
+    "readers": {
+        "citeulike": "3",
+        "connotea": "0",
+        "mendeley": "861"
+    },
+    "readers_count": 864,
+    "schema": "1.5.4",
+    "scopus_subjects": [
+        "Biochemistry, Genetics and Molecular Biology",
+        "Life Sciences"
+    ],
+    "score": 12.08,
+    "subjects": [
+        "biology"
+    ],
+    "title": "THE STRUCTURE OF DNA",
+    "type": "article",
+    "url": "http://dx.doi.org/10.1101/sqb.1953.018.01.020"
+}
