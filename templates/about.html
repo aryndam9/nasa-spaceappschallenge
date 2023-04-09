@@ -78,8 +78,69 @@
     {% include 'navbar.html' %}
     <div>
       <h1>About The Open Metric</h1>
-      <p>The Open Metric is a tool designed to measure the impact of academic articles using a combination of citation count, social media mentions, and open access status. The tool is based on a scoring system that takes into account these factors to provide a comprehensive measure of an article's impact.</p>
-      <p>To use The Open Metric, simply enter the DOI of the article you wish to measure on the homepage and click "Submit". The tool will then generate a score based on the criteria mentioned above.</p>
+      <h3>Project summary</h3>
+      <p>With the introduction of Open Science and the increase of scientific research accessibility, the current metrics to measure relevance or success within the research community are rapidly becoming obsolete. These academic metrics aim to represent the dissemination of knowledge among scientists rather than the impact of the research on the wider world. There is, therefore, a lack of metrics to measure the effectiveness and impact of science. In this project, a new metric system is proposed with the aim of correcting this trend by measuring the impact of science on society and, eventually, the impact of society on scientific research.</p>
+
+
+
+<h3>Detailed project description</h2> 
+  <p></p>What is Successful Science? As was recently demonstrated during the COVID-19 global pandemic, the scientific community has been responsible for some of the most important turning points in our history. Science has enabled humanity to advance and change the environment around them throughout recorded history. However, traditionally, scientific knowledge and procedures have been kept apart from society by using complex and technical language or by withholding information or data. In recent years, there has been a significant trend toward open science, breaching the walls between science and society. This has improved science's accessibility, diversity, and inclusivity and has encouraged several cross-disciplinary scientific field collaborations. The objective of this trend is to positively influence society and involve people in the scientific process by incorporating new concepts such as &ldquo;human practices,&quot; which consists of studying how science impacts society and how society impacts science (iGEM, 2003).</p>
+
+<p>Current scientific research metrics and limitations One of the main challenges of scientific research has always been the analysis of its impact and how to measure it. Historically, the metrics used for this aim have been merely focused on quantitative measurements based on data such as article citations or the number of publications. While these measurements might have been considered a good way to measure the outcome of research, they are not effective for measuring the social impact of this research and its outreach (Pourret et al., 2022). This emphasizes the need for new and better metrics able to measure not only the quantitative side of scientific research but also the quality of the different scientific activities that open science has normalized among the scientific community.</p>
+<h3>What is the Open Metric? </h3>
+<p>The Open Metric is a new measurement system that allows scientists to assess the effectiveness of their open science activities, such as journal articles, social media or news appearances, and outreach activities. It also allows independent researchers, especially those from developing countries, to identify the reproducibility of a specific research project and plan for future research. The factors included in this metric encompass the quantitative and traditionally measured values for evaluating scientific outcomes while incorporating social media interactions or online reader behavior altimetric to assess the quality of these outcomes.</p>
+
+<p></p>
+<h3>How does the Open Metric work?</h3>
+<p>The Open Metric takes different input factors to compute a final value that effectively identifies the openness, engagement, and impact of any journal article, data repository, or scientific outreach activity.</p>
+
+<p>The input factors and their different weights are the following:</p>
+<ul> 
+<li><h6>Credibility: 50%</h6>
+  <p>The credibility is measured using the citation index, which takes into account the number of times this specific content has been cited in scientific articles or scientific media. This value has a 50% of the weight, since it is highly effective to measure the impact on new scientific projects and outcomes.  The accessibility of the content considers if it has been published under a pay-per-view format or it is open access and free. This factor has a weight of 25%, which highlights the importance of the parameter when measuring the potentially social impact of scientific work, especially towards developing countries. The societal engagement factor, which is divided between social media interaction and online reader behavior, incorporates the social impact of the content. This factor has a weight of 25%, divided into 15% for social media interaction, considering both the post numbers and the reactions, and a 10% for online reader behavior (currently not yet included in the prototype as we could not find the right data), which is characterized by the time spent by readers on the content. All these factors play a key role in the social impact and effectiveness of open science activities, and are therefore included in the Open Metric.</p>
+
+</li>
+<li><h6>Accessibility: 25%</h6>
+  <p>For the accessibility factor, it will be more holistic to include the proportion of referenced content that is open and free aside from only scoring between paid and free content. This will make it more comprehensive since it will allow independent researchers to check whether resources to reproduce the work are accessible. Since paywalls can potentially hinder reproducibility, especially by researchers from developing countries (Buehling et al., 2022; Font&uacute;rbel &amp; Vizentin-Bugoni, 2021), we would also want to create a feature where they can see whether the publication&rsquo;s references are open or not. And if they are not open, they can click on the publication and see the corresponding author. This way they might be able to contact the corresponding author and ask for access to the publication.  Another thing to be considered is the inclusion of citations in patents for the credibility factor. This will show how a research work is solid enough to encourage technological transfer and scientifically support inventions.</p>
+
+</li>
+<li><h6>Societal engagement: 25%</h6>
+  <p>Lastly, for societal engagement, we were not able to find the right data for online reader behavior. Initially, we thought the most ideal input for this would be the time spent by readers on the content but we will need to further look into this. From the individual Open Metric, which is given to each content type as described above, a normalized metric could be used for both scientific journals, conferences, and also for individual scientists or research groups.</p>
+</li>
+
+</ul>
+
+
+<p>Looking to the future. There are still a lot of things that could be improved in the Open Metric, such as For some of the factors, new approaches could be considered.</p>
+
+<p>Overall, the Open Metric is the first step towards the measurement and improvement of the effectiveness and social impact of scientific research.</p>
+
+
+<h6>Using Data  To initially develop the input factors of the Open Metric, we utilized the following:</h6>
+
+<p>For credibility and accessibility, we utilized OurResearch.org's OpenAlex (2022) For societal engagement, we utilized Altmetric's Free Tools (2015) HACKATHON JOURNEY The Space Apps Hackathon 2022 has been a great experience that has allowed us to grow and learn about many different aspects of scientific research that normally go unnoticed or are ignored. One of these aspects is the measurement of the effectiveness or social impact we can generate as scientists. While we are usually focused on how our results might be used or misused, there is a big component to our work that is based on society&rsquo;s feedback. Since measuring this impact is a complex problem, we decided to work on it from multiple perspectives, analyzing first what we and the community around us consider successful science is, and then what are the factors that we internally use to conclude this. This was a big challenge since most of these factors are entirely based on qualitative properties rather than quantitative ones, and they are therefore difficult to measure but also prone to subjectivity. To overcome this challenge, we did a lot of research on the current state-of-the-art altmetrics and computational capabilities but also tried to envision the future of qualitative analysis and how this could benefit the Open Metric system.</p>
+<h4>REFERENCES </h4>
+<ul>
+<li>Altmetric. (2015, July 9). Free tools. Altmetric. https://www.altmetric.com/products/free-tools/</li>
+
+<li>Buehling, K., Geissler, M., &amp; Strecker, D. (2022). Free access to scientific literature and its influence on the publishing activity in developing countries: The effect of Sci-Hub in the field of mathematics. Journal of the Association for Information Science and Technology, 73(9), 1336&ndash;1355. https://doi.org/10.1002/asi.24636</li>
+
+<li>ESA. (n.d.). Open Science. Retrieved October 2, 2022, from https://www.esa.int/About_Us/Digital_Agenda/Open_Science</li>
+
+<li>European Commission. (n.d.). MLE on Open Science&mdash;Altmetrics and Rewards | Research and Innovation. Retrieved October 2, 2022, from https://ec.europa.eu/research-and-innovation/en/statistics/policy-support-facility/mle-open-science-altmetrics-and-rewards</li>
+
+<li>Font&uacute;rbel, F. E., &amp; Vizentin-Bugoni, J. (2021). A Paywall Coming Down, Another Being Erected: Open Access Article Processing Charges (APC) may Prevent Some Researchers from Publishing in Leading Journals. The Bulletin of the Ecological Society of America, 102(1), e01791. https://doi.org/10.1002/bes2.1791</li>
+
+<li>iGEM. (2003). IGEM Human Practices. igem.org/Human_Practices</li>
+
+<li>NASA. (n.d.). Open-Source Science Initiative | Science Mission Directorate. Retrieved October 2, 2022, from https://science.nasa.gov/open-science-overview</li>
+
+<li>OurResearch.org. (2022, January 3). OpenAlex: The open catalog to the global research system. https://openalex.org/</li>
+
+<li>Pourret, O., Irawan, D. E., Shaghaei, N., Rijsingen, E. M. van, &amp; Besan&ccedil;on, L. (2022). Toward More Inclusive Metrics and Open Science to Measure Research Assessment in Earth and Natural Sciences. Frontiers in Research Metrics and Analytics, 7. https://www.frontiersin.org/articles/10.3389/frma.2022.850333</li>
+
+<li>Ramachandran, R., Bugbee, K., &amp; Murphy, K. (2021). From Open Data to Open Science. Earth and Space Science, 8(5), e2020EA001562. https://doi.org/10.1029/2020EA001562</li>
+</ul>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
