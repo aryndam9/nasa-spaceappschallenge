@@ -148,13 +148,9 @@
       {% if open_metric_score %}
       <div class="glass-box">
         <div class="results">
-          <p><span style="font-weight:bold;">TITLE:</span> <span>{{ title }}</span></p>
-    <p><span style="font-weight:bold;">DOI:</span> <span>{{ doi }}</span></p>
-      
-          <div class="box">
-            <span class="number">{{ open_metric_score }}</span>
-            <span class="text">Open Metric score</span>
-          </div>
+          <p>Title: <span>{{ title }}</span></p>
+          <p>DOI: <span>{{ doi }}</span></p>
+          <p>The Open Metric value for this article is: <span>{{ open_metric_score }}</span></p>
         </div>
       </div>
       
