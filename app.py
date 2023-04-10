@@ -4,8 +4,26 @@ import json
 
 app = Flask(__name__)
 
-def normalize(x, bounds):
-    return bounds['desired']['lower'] + (x - bounds['actual']['lower']) * (bounds['desired']['upper'] - bounds['desired']['lower']) / (bounds['actual']['upper'] - bounds['actual']['lower'])
+# def open_score(is_oa, cited_by_social, total_citation_sum):
+#     normalized_is_oa = is_oa / max(is_oa, cited_by_social, total_citation_sum)
+#     normalized_cited_by_social = cited_by_social / max(is_oa, cited_by_social, total_citation_sum)
+#     normalized_total_citation_sum = total_citation_sum / max(is_oa, cited_by_social, total_citation_sum)
+
+#     open_metric_score = ((normalized_is_oa * 0.25) + (normalized_cited_by_social * 0.25) + (normalized_total_citation_sum * 0.5)) * 100
+
+#     return open_metric_score
+
+def open_score(is_oa, cited_by_social, total_citation_sum):
+    # final_number = ((x - min(x, y, z)) / (max(x, y, z) - min(x, y, z)) * 0.25
+# + (y - min(x, y, z)) / (max(x, y, z) - min(x, y, z)) * 0.25
+# + (z - min(x, y, z)) / (max(x, y, z) - min(x, y, z)) * 0.5) * 100
+    
+    final_number = ((is_oa - min(is_oa, cited_by_social, total_citation_sum)) / (max(is_oa, cited_by_social, total_citation_sum) - min(is_oa, cited_by_social, total_citation_sum)) * 0.25
++ (cited_by_social - min(is_oa, cited_by_social, total_citation_sum)) / (max(is_oa, cited_by_social, total_citation_sum) - min(is_oa, cited_by_social, total_citation_sum)) * 0.25
++ (total_citation_sum - min(is_oa, cited_by_social, total_citation_sum)) / (max(is_oa, cited_by_social, total_citation_sum) - min(is_oa, cited_by_social, total_citation_sum)) * 0.5) * 100
+    
+    return final_number
+
 
 # the API prefix
 api_altmetric = "http://api.altmetric.com/v1/doi/"
@@ -24,18 +42,16 @@ def home():
                 result = response.json()
                 title = result['title']
                 doi = result['doi']
-                is_oa = 0 if result['is_oa'] == False else 1
-                cited_by = [key for key in result.keys() if key.startswith('cited_by')]
-                wanted_cited_by = ['cited_by_fbwalls_count', 'cited_by_feeds_count', 'cited_by_gplus_count', 'cited_by_msm_count', 'cited_by_posts_count', 'cited_by_rdts_count', 'cited_by_tweeters_count', 'cited_by_videos_count']
-                required_cited_by = list(set(wanted_cited_by).intersection(cited_by))
-                cited_by_results = sum([float(result[key]) for key in required_cited_by])
+                is_oa = 0 if result['is_oa'] == False else 25
+                cited_by_social = result['cited_by_posts_count']
+                
                 total_citation = requests.get(api_citation_total + doi)
                 total_citation_json = total_citation.json()
                 total_citation_sum = len(total_citation_json)
 
-                open_metric_score = (total_citation_sum/4)*is_oa + (total_citation_sum/2) + cited_by_results
+                open_metric_score = open_score(is_oa, cited_by_social, total_citation_sum)
 
-                return render_template('index.html', title=title, doi=doi, open_metric_score=open_metric_score)
+                return render_template('index.html', title=title, doi=doi, open_metric_score=round(open_metric_score, 2))
             else:
                 return render_template('index.html', error=True)
         except:
