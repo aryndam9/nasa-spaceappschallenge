@@ -31,6 +31,11 @@ api_citation_total = "https://opencitations.net/index/coci/api/v1/citations/"
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
+
+    open_metric_score = None  # reset open_metric_score to None
+
+
+
     if request.method == 'POST':
         doi = request.form['doi']
         response = requests.get(api_altmetric + doi)
@@ -57,7 +62,7 @@ def home():
         except:
             return render_template('index.html', error=True)
     else:
-        return render_template('index.html')
+        return render_template('index.html', open_metric_score=open_metric_score)
 
 
 @app.route('/about')
