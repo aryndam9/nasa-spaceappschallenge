@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="https://sa-2019.s3.amazonaws.com/media/images/Space_Apps_Default_Logo_-_2-Color_White.width-352.png" alt="NASA Space Apps Challenge 2022">
+</p>
+<p align="center">
+  <a href="https://2022.spaceappschallenge.org/challenges/2022-challenges/measuring-open-science/teams/the-open-metric/project">Nasa Space apps project page</a>
+</p>
+
+
 # The Open Metric
 
 With the introduction of Open Science and the increase of scientific research accessibility, the current metrics to measure relevance or success within the research community are rapidly becoming obsolete. These academic metrics aim to represent the dissemination of knowledge among scientists rather than the impact of the research on the wider world. There is, therefore, a lack of metrics to measure the effectiveness and impact of science. 
