@@ -22,13 +22,46 @@ There are still a lot of things that could be improved in the Open Metric, such 
 - The inclusion of citations in patents for the credibility factor. This will show how a research work is solid enough to encourage technological transfer and scientifically support inventions.
 - For societal engagement, it will be ideal to gather data on online reader behavior, such as the time spent by readers on the content.
 
+
+# Open Metric
+
+Open Metric is a web app developed as part of the [NASA Space Apps Challenge 2022]([https://2021.spaceappschallenge.org/challenges/statements/open-metric/details](https://2022.spaceappschallenge.org/challenges/2022-challenges/measuring-open-science/teams/the-open-metric/project)). It allows users to explore different metrics for evaluating the openness of scientific papers. The app is built using python on flask.
+
+## Features
+
+-  Credibility score: Measures the number of times the content has been cited in scientific articles or media, providing a weight of 50% in the overall score calculation.
+- Accessibility score: Determines if the content is available as open access or under a pay-per-view format, providing a weight of 25% in the overall score calculation.
+- Societal engagement score: Evaluates the social impact of the content, taking into account social media interaction and online reader behavior, with a total weight of 25% in the overall score calculation.
+- Weighted score calculation: Combines the three input factors into a weighted score calculation, providing an overall score between 0 and 100.
+
 ## How to use
 
-From the individual Open Metric, which is given to each content type as described above, a normalized metric could be used for both scientific journals, conferences, and also for individual scientists or research groups.
+To use Open Metric, simply visit the [web app](https://nasa-spaceapps.vercel.app/) and follow these steps:
+
+1. Enter the DOI of the paper you want to score.
+2. Click the "Submit" button.
+3. The Open Metric score will be displayed.
+
+For more details on the metric, please refer to the "About" section of the web app.
+
 
 ## Contributing
 
 Contributions to the Open Metric project are always welcome! If you have any ideas or suggestions for improving the Open Metric, feel free to open an issue or submit a pull request.
+If you want to run the app locally or contribute to its development, follow these steps:
+
+1. Clone this repository to your local machine using Git.
+2. Install the required dependencies by running `flask run app.py` in the project directory.
+3. This will launch the app in your default browser at Localhost.
+4. Make any changes you want and submit a pull request.
+
+## Credits
+
+Open Metric was developed by a team of four participants as part of the NASA International Space Apps Challenge 2021. The team members are:
+
+- [Arindam](https://github.com/aryndam9)
+- [Jaume Puig]()
+- [Florence Pauline Basubas]()
 
 ## License
 
