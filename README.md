@@ -42,6 +42,10 @@ Open Metric is a web app developed as part of the [NASA Space Apps Challenge 202
 - Societal engagement score: Evaluates the social impact of the content, taking into account social media interaction and online reader behavior, with a total weight of 25% in the overall score calculation.
 - Weighted score calculation: Combines the three input factors into a weighted score calculation, providing an overall score between 0 and 100.
 
+<div align="center">
+    <img src="https://github.com/aryndam9/nasa-spaceappschallenge/blob/main/v1-old/Screenshot_1.png" alt="Open Metric Web App Screenshot">
+</div>
+
 ## How to use
 
 To use Open Metric, simply visit the [web app](https://nasa-spaceapps.vercel.app/) and follow these steps:
