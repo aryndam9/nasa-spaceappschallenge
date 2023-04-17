@@ -72,7 +72,7 @@ If you want to run the app locally or contribute to its development, follow thes
 Open Metric was developed by a team of four participants as part of the NASA International Space Apps Challenge 2021. The team members are:
 
 - [Arindam](https://github.com/aryndam9)
-- [Jaume Puig]()
+- [Jaume Puig](https://github.com/JaumePuig98)
 - [Florence Pauline Basubas]()
 
 ## License
