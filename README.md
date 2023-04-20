@@ -5,6 +5,16 @@
   <a href="https://2022.spaceappschallenge.org/challenges/2022-challenges/measuring-open-science/teams/the-open-metric/project">Nasa Space apps project page</a>
 </p>
 
+# April TOPS Community Forum #
+
+**Date:** Thursday April 13, 2023 1-2 PM ET
+
+[Video Recording](https://www.youtube.com/watch?v=PSeKlCl7YLs)
+
+[Slides](https://zenodo.org/record/7826161#.ZEBHunbMKUk)
+
+[Code of conduct](../Community_Forums/code_of_conduct.md)
+
 
 # The Open Metric
 
