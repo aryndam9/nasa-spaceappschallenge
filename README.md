@@ -13,7 +13,7 @@
 
 [Slides](https://zenodo.org/record/7826161#.ZEBHunbMKUk)
 
-[Code of conduct](../Community_Forums/code_of_conduct.md)
+[Certificate](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/aryndam9/nasa-spaceappschallenge/03d16d1db67157a57ac11f287be0aa99d1268048/NASA_TOPS_Forum_Participation_Metrics.pdf)
 
 
 # The Open Metric
